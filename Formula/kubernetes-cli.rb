@@ -1,7 +1,7 @@
 class KubernetesCli < Formula
   desc "Kubernetes command-line interface"
   homepage "http://kubernetes.io/"
-  url "https://github.com/kubernetes/kubernetes/archive/v1.3.7.tar.gz"
+  url "https://github.com/kubernetes/kubernetes/archive/v1.4.0.tar.gz"
   sha256 "40a655b5ae1734acfda157088a20853aaf87945508edf73497bec5fa26352a9b"
   head "https://github.com/kubernetes/kubernetes.git"
 
@@ -15,9 +15,9 @@ class KubernetesCli < Formula
   devel do
     # building from the tag lets it pick up the correct version info
     url "https://github.com/kubernetes/kubernetes.git",
-        :tag => "v1.4.0-alpha.3",
-        :revision => "b44b716965db2d54c8c7dfcdbcb1d54792ab8559"
-    version "1.4.0-alpha.3"
+        :tag => "v1.5.0-alpha.0",
+        :revision => "ff3ca3d616518087dc20180f69bb4038379f1028"
+    version "1.5.0-alpha.0"
   end
 
   depends_on "go" => :build
